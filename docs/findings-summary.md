@@ -1,4 +1,8 @@
-# Findings Summary
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:6B7280,100:F8FAFC&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+</p>
+
+<h1 align="center">Findings Summary</h1>
 
 ## Executive Summary
 
@@ -261,3 +265,7 @@ The activity on GF-DEV01 represented an active compromise involving a live impla
 8. Deploy detections for systemd-launched implants and suspicious Linux syscall process activity.
 9. Conduct post-containment validation scans.
 10. Complete lessons learned and detection tuning.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F8FAFC,45:6B7280,100:050505&height=120&section=footer" />
+</p>
