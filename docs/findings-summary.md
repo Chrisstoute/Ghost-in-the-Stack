@@ -22,11 +22,15 @@ The hunt identified a live implant process, post-compromise tooling, persistence
 
 Authentication telemetry established the Linux authentication table as a key source for successful and failed SSH activity. This became the foundation for tracking external access, compromised account use, and attacker-controlled login activity.
 
-**Evidence:** `Screenshots/1_Linux_Authentication_Table.jpg`
+**Evidence:**
+
+![Linux Authentication Table](../Screenshots/1_Linux_Authentication_Table.jpg)
+
+---
 
 ### 2. Implant Download and Execution Chain
 
-Process telemetry showed the implant download and execution sequence. The operator used curl to retrieve the implant payload and then executed it on GF-DEV01.
+Process telemetry showed the implant download and execution sequence. The operator used `curl` to retrieve the implant payload and then executed it on GF-DEV01.
 
 Key observed behavior included:
 
@@ -36,10 +40,15 @@ Key observed behavior included:
 
 **Evidence:**
 
-- `Screenshots/2_Implant_Download_Defender_Process_Tree_pt_1.jpg`
-- `Screenshots/3_Defender_Process_Tree_Partial_Installer_Actions_pt_1.jpg`
-- `Screenshots/3_Sentinel_LinuxProcess_Full_Installer_Actions_pt_2.jpg`
-- `Screenshots/7_Helix_Update_PID_PPID_Validation.jpg`
+![Implant Download Defender Process Tree](../Screenshots/2_Implant_Download_Defender_Process_Tree_pt_1.jpg)
+
+![Defender Process Tree Partial Installer Actions](../Screenshots/3_Defender_Process_Tree_Partial_Installer_Actions_pt_1.jpg)
+
+![Sentinel LinuxProcess Full Installer Actions](../Screenshots/3_Sentinel_LinuxProcess_Full_Installer_Actions_pt_2.jpg)
+
+![Helix Update PID PPID Validation](../Screenshots/7_Helix_Update_PID_PPID_Validation.jpg)
+
+---
 
 ### 3. Implant Process Became Detached and Live
 
@@ -49,9 +58,13 @@ This supported the conclusion that the implant was still active and required imm
 
 **Evidence:**
 
-- `Screenshots/7_Helix_Update_PID_PPID_Validation.jpg`
-- `Screenshots/26_Implant_Detach_Time_PID_34616_1.jpg`
-- `Screenshots/41_Process_Telemetry_Helix_Update_Running_pt_1.jpg`
+![Helix Update PID PPID Validation](../Screenshots/7_Helix_Update_PID_PPID_Validation.jpg)
+
+![Implant Detach Time PID 34616](../Screenshots/26_Implant_Detach_Time_PID_34616_1.jpg)
+
+![Process Telemetry Helix Update Running](../Screenshots/41_Process_Telemetry_Helix_Update_Running_pt_1.jpg)
+
+---
 
 ### 4. Dwell Time Calculation
 
@@ -65,9 +78,13 @@ Final dwell time:
 
 **Evidence:**
 
-- `Screenshots/26_Dwell_Time_104_Minutes_Calculation.jpg`
-- `Screenshots/26_First_External_Sancadmin_SSH.jpg`
-- `Screenshots/26_Implant_Detach_Time_PID_34616_1.jpg`
+![Dwell Time 104 Minutes Calculation](../Screenshots/26_Dwell_Time_104_Minutes_Calculation.jpg)
+
+![First External Sancadmin SSH](../Screenshots/26_First_External_Sancadmin_SSH.jpg)
+
+![Implant Detach Time PID 34616](../Screenshots/26_Implant_Detach_Time_PID_34616_1.jpg)
+
+---
 
 ### 5. External Access from Attacker Infrastructure
 
@@ -75,8 +92,11 @@ Authentication records identified successful SSH access by `sancadmin` from an e
 
 **Evidence:**
 
-- `Screenshots/14_TKT003_Source_IP_pt_1.jpg`
-- `Screenshots/26_First_External_Sancadmin_SSH.jpg`
+![TKT003 Source IP](../Screenshots/14_TKT003_Source_IP_pt_1.jpg)
+
+![First External Sancadmin SSH](../Screenshots/26_First_External_Sancadmin_SSH.jpg)
+
+---
 
 ### 6. Network Pivoting and Infrastructure Enrichment
 
@@ -84,9 +104,13 @@ Network telemetry showed outbound activity to infrastructure associated with att
 
 **Evidence:**
 
-- `Screenshots/14_IP_WHOIS_ASN_Provider_pt_2.jpg`
-- `Screenshots/29_InstallSH_Curl_To_Cloudflare_Fronted_IP.jpg`
-- `Screenshots/30_Late_Session_C2_Watchlist_IOC.jpg`
+![IP WHOIS ASN Provider](../Screenshots/14_IP_WHOIS_ASN_Provider_pt_2.jpg)
+
+![InstallSH Curl To Cloudflare Fronted IP](../Screenshots/29_InstallSH_Curl_To_Cloudflare_Fronted_IP.jpg)
+
+![Late Session C2 Watchlist IOC](../Screenshots/30_Late_Session_C2_Watchlist_IOC.jpg)
+
+---
 
 ### 7. Watch Key and Tool Activity
 
@@ -109,10 +133,15 @@ claude_data
 
 **Evidence:**
 
-- `Screenshots/10_Broad_Tool_To_WatchKey_Mapping_pt_1.jpg`
-- `Screenshots/10_Implant_Scoped_Tool_To_WatchKey_Mapping_pt_2.jpg`
-- `Screenshots/11_Implant_Reads_Most_Claude_Data.jpg`
-- `Screenshots/12_Implant_Read_AuditKeys.jpg`
+![Broad Tool To WatchKey Mapping](../Screenshots/10_Broad_Tool_To_WatchKey_Mapping_pt_1.jpg)
+
+![Implant Scoped Tool To WatchKey Mapping](../Screenshots/10_Implant_Scoped_Tool_To_WatchKey_Mapping_pt_2.jpg)
+
+![Implant Reads Most Claude Data](../Screenshots/11_Implant_Reads_Most_Claude_Data.jpg)
+
+![Implant Read AuditKeys](../Screenshots/12_Implant_Read_AuditKeys.jpg)
+
+---
 
 ### 8. Syscall and Raw Telemetry Pivoting
 
@@ -120,9 +149,13 @@ Linux syscall and raw telemetry were used to decode audit fields, extract proces
 
 **Evidence:**
 
-- `Screenshots/13_AuditMsg_Proctitle_Decode_Pivot_pt_2.jpg`
-- `Screenshots/13_Proctitle_Hex_Decoded_Comment_pt_3.jpg`
-- `Screenshots/13_SSH_User_Key_Syscall_Pivot_pt_1.jpg`
+![AuditMsg Proctitle Decode Pivot](../Screenshots/13_AuditMsg_Proctitle_Decode_Pivot_pt_2.jpg)
+
+![Proctitle Hex Decoded Comment](../Screenshots/13_Proctitle_Hex_Decoded_Comment_pt_3.jpg)
+
+![SSH User Key Syscall Pivot](../Screenshots/13_SSH_User_Key_Syscall_Pivot_pt_1.jpg)
+
+---
 
 ### 9. Credential and SSH Key Activity
 
@@ -130,9 +163,13 @@ The operator activity involved SSH key discovery and credential validation behav
 
 **Evidence:**
 
-- `Screenshots/15_SSH_Key_Comment_Attribution_Signal.jpg`
-- `Screenshots/17_Credential_Validation_Pattern_Analysis.jpg`
-- `Screenshots/21_Smbclient_Cleartext_Credential.jpg`
+![SSH Key Comment Attribution Signal](../Screenshots/15_SSH_Key_Comment_Attribution_Signal.jpg)
+
+![Credential Validation Pattern Analysis](../Screenshots/17_Credential_Validation_Pattern_Analysis.jpg)
+
+![Smbclient Cleartext Credential](../Screenshots/21_Smbclient_Cleartext_Credential.jpg)
+
+---
 
 ### 10. Lateral Movement Preparation
 
@@ -140,10 +177,15 @@ The operator used `smbclient` with cleartext credentials and staged Windows-orie
 
 **Evidence:**
 
-- `Screenshots/20_Remote_SAMR_IPC_Pipe_Access.jpg`
-- `Screenshots/21_Smbclient_Cleartext_Credential.jpg`
-- `Screenshots/22_Smbclient_Variant_Testing.jpg`
-- `Screenshots/38_SFTP_Server_Wrote_New_Binaries.jpg`
+![Remote SAMR IPC Pipe Access](../Screenshots/20_Remote_SAMR_IPC_Pipe_Access.jpg)
+
+![Smbclient Cleartext Credential](../Screenshots/21_Smbclient_Cleartext_Credential.jpg)
+
+![Smbclient Variant Testing](../Screenshots/22_Smbclient_Variant_Testing.jpg)
+
+![SFTP Server Wrote New Binaries](../Screenshots/38_SFTP_Server_Wrote_New_Binaries.jpg)
+
+---
 
 ### 11. Ligolo Fingerprint / Agentless Scan Activity
 
@@ -151,7 +193,9 @@ Network and process evidence showed activity consistent with Ligolo-related pivo
 
 **Evidence:**
 
-- `Screenshots/24_MDC_Agentless_Scan_Ligolo_Fingerprint.jpg`
+![MDC Agentless Scan Ligolo Fingerprint](../Screenshots/24_MDC_Agentless_Scan_Ligolo_Fingerprint.jpg)
+
+---
 
 ### 12. Containment Cleanup List
 
@@ -159,7 +203,9 @@ The containment phase identified files and units that required cleanup from DEV0
 
 **Evidence:**
 
-- `Screenshots/28_DEV01_Containment_Cleanup_Paths.jpg`
+![DEV01 Containment Cleanup Paths](../Screenshots/28_DEV01_Containment_Cleanup_Paths.jpg)
+
+---
 
 ### 13. Detection Engineering
 
@@ -173,8 +219,9 @@ The detection targeted Linux syscall-level process execution data captured throu
 
 **Evidence / Explanation:**
 
-- Detection logic discussed in walkthrough
-- Q31/Q32 detection engineering answers documented in narrative form
+Detection logic is documented in the walkthrough narrative for Q31 and Q32.
+
+---
 
 ### 14. Final Live Threat Brief
 
@@ -190,9 +237,13 @@ This shows persistence, dormant service state, and a currently running implant p
 
 **Evidence:**
 
-- `Screenshots/41_Process_Telemetry_Helix_Update_Running_pt_1.jpg`
-- `Screenshots/41_Service_Persistence_Helix_Sync_Service_pt_2.jpg`
-- `Screenshots/41_File_Telemetry_Hbsync_Dormant_pt_3.jpg`
+![Process Telemetry Helix Update Running](../Screenshots/41_Process_Telemetry_Helix_Update_Running_pt_1.jpg)
+
+![Service Persistence Helix Sync Service](../Screenshots/41_Service_Persistence_Helix_Sync_Service_pt_2.jpg)
+
+![File Telemetry Hbsync Dormant](../Screenshots/41_File_Telemetry_Hbsync_Dormant_pt_3.jpg)
+
+---
 
 ## Final Assessment
 
