@@ -1,4 +1,8 @@
-# Ghost in the Stack — Advanced Threat Hunt Walkthrough
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:6B7280,100:F8FAFC&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+</p>
+
+<h1 align="center">Ghost in the Stack — Advanced Threat Hunt Walkthrough</h1>
 
 ---
 
@@ -509,3 +513,7 @@ This hunt reconstructed a multi-stage Linux intrusion involving implant deployme
 - Use shell history, process telemetry, file telemetry, network telemetry, and syscall data together.
 - For CDN-fronted infrastructure, do enrichment before recommending broad perimeter blocks.
 - Screenshots should show both the query and the result whenever possible.
+
+  <p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F8FAFC,45:6B7280,100:050505&height=120&section=footer" />
+</p>
