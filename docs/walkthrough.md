@@ -1,7 +1,5 @@
 # Ghost in the Stack — Advanced Threat Hunt Walkthrough
 
-> Copy this content into `docs/walkthrough.md` in VS Code.
-
 ---
 
 ## Project Overview
