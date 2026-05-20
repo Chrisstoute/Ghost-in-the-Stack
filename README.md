@@ -1,6 +1,10 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1220,50:334155,100:DC2626&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:6B7280,100:F8FAFC&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+</p>
 
 <h1 align="center">Ghost in the Stack — Advanced Threat Hunt</h1>
+
 
 <p align="center">
   <img src="https://img.shields.io/badge/Threat%20Hunting-Advanced-red?style=for-the-badge" />
@@ -9,6 +13,32 @@
   <img src="https://img.shields.io/badge/Incident%20Response-Live%20Threat-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Linux-Telemetry-black?style=for-the-badge" />
 </p>
+
+</div>
+
+<div align="center">
+
+
+<table>
+<tr>
+<td align="center">
+
+<h3>🛡️ Cyber Range Scenario Credit 🛡️</h3>
+
+<strong>This threat hunt scenario was provided by Josh Madakor, CEO of The Cyber Range.</strong>
+
+<br><br>
+
+<a href="https://www.skool.com/cyber-range">
+  <img src="https://img.shields.io/badge/JOIN%20THE%20CYBER%20RANGE-CLICK%20HERE-red?style=for-the-badge&labelColor=000000&color=ff0000" alt="Join The Cyber Range">
+</a>
+
+</td>
+</tr>
+</table>
+
+</div>
+
 
 <p align="center">
   <a href="https://github.com/Chrisstoute/Ghost-in-the-Stack/blob/main/docs/walkthrough.md">
@@ -264,4 +294,6 @@ It also highlighted why infrastructure enrichment matters. Some destinations may
 
 The Ghost in the Stack investigation identified a live Linux implant, validated its process lineage, reconstructed attacker behavior, extracted IOCs, scoped persistence, and produced containment-focused findings. The hunt moved from raw telemetry to actionable incident response decisions and detection engineering recommendations.
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:DC2626,50:334155,100:0B1220&height=120&section=footer" />
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F8FAFC,45:6B7280,100:050505&height=120&section=footer" />
+</p>
