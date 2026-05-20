@@ -1,12 +1,28 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B1220,50:334155,100:DC2626&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
 
-# Ghost in the Stack — Advanced Threat Hunt
+<h1 align="center">Ghost in the Stack — Advanced Threat Hunt</h1>
 
-![Threat Hunting](https://img.shields.io/badge/Threat%20Hunting-Advanced-red?style=for-the-badge)
-![Microsoft Sentinel](https://img.shields.io/badge/Microsoft%20Sentinel-KQL-blue?style=for-the-badge)
-![Microsoft Defender](https://img.shields.io/badge/Microsoft%20Defender-Advanced%20Hunting-0078D4?style=for-the-badge)
-![Incident Response](https://img.shields.io/badge/Incident%20Response-Live%20Threat-orange?style=for-the-badge)
-![Linux](https://img.shields.io/badge/Linux-Telemetry-black?style=for-the-badge)
+<p align="center">
+  <img src="https://img.shields.io/badge/Threat%20Hunting-Advanced-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Microsoft%20Sentinel-KQL-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Microsoft%20Defender-Advanced%20Hunting-0078D4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Incident%20Response-Live%20Threat-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Linux-Telemetry-black?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/Chrisstoute/Ghost-in-the-Stack/blob/main/docs/walkthrough.md">
+    <img src="https://img.shields.io/badge/View-Walkthrough-0B1220?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://github.com/Chrisstoute/Ghost-in-the-Stack/blob/main/docs/findings-summary.md">
+    <img src="https://img.shields.io/badge/View-Findings%20Summary-DC2626?style=for-the-badge&logo=github" />
+  </a>
+  <a href="https://github.com/Chrisstoute/Ghost-in-the-Stack/blob/main/docs/lessons-learned.md">
+    <img src="https://img.shields.io/badge/View-Lessons%20Learned-334155?style=for-the-badge&logo=github" />
+  </a>
+</p>
+
+---
 
 ## Overview
 
@@ -44,6 +60,16 @@ The hunt centered on answering the following:
 | Investigation Artifacts | Process telemetry, file events, shell history, authentication logs, network events |
 | Detection Engineering | Sigma-style rule design |
 | Incident Response | Containment scoping, artifact cleanup planning, live threat brief |
+
+---
+
+## Documentation
+
+| Document | Description |
+|---|---|
+| [Full Walkthrough](docs/walkthrough.md) | Step-by-step investigation flow, pivots, evidence, and conclusions |
+| [Findings Summary](docs/findings-summary.md) | Executive-style summary of major findings and supporting evidence |
+| [Lessons Learned](docs/lessons-learned.md) | Key takeaways from the hunt and response process |
 
 ---
 
