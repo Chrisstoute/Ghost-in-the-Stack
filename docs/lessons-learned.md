@@ -1,4 +1,8 @@
-# Lessons Learned
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050505,45:6B7280,100:F8FAFC&height=170&section=header&text=Ghost%20in%20the%20Stack&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+</p>
+
+<h1 align="center">Lessons Learned</h1>
 
 ## Overview
 
@@ -148,3 +152,7 @@ Good detections should be behavior-focused. A useful Sigma-style title should be
 This hunt was challenging because it required both technical investigation and careful interpretation. The most important improvement was learning how to turn noisy telemetry into clear findings that support incident response decisions.
 
 The project strengthened my ability to investigate live Linux threats, validate suspicious activity with evidence, and document the investigation in a way that can be used by SOC, incident response, and detection engineering teams.
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F8FAFC,45:6B7280,100:050505&height=120&section=footer" />
+</p>
