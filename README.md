@@ -52,7 +52,25 @@
   </a>
 </p>
 
----
+<br>
+
+<div align="center">
+
+<h2>🏆 Challenge Completion</h2>
+
+<img src="Screenshots/7th_Place.jpg" alt="Ghost in the Stack 7th Place Leaderboard Screenshot" width="850">
+
+<br><br>
+
+<strong>Completed all 41 flags in the Ghost in the Stack threat hunt and finished 7th out of 45 hunters.</strong>
+
+<br><br>
+
+This threat hunt required full-chain investigation across Linux authentication logs, process telemetry, file telemetry, shell history, network activity, persistence mechanisms, Sigma-style detection engineering, and live-threat containment planning.
+
+</div>
+
+<br>
 
 ## Overview
 
